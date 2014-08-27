@@ -135,10 +135,9 @@ strong {
 
 img {
   position: relative;
-  margin: 0 auto;
   max-width: 739px;
   padding: 5px;
-  margin: 10px 0 10px 0;
+  margin: 10px 0 0px 0;
   border: 1px solid #ebebeb;
 
   box-shadow: 0 0 5px #ebebeb;
@@ -147,7 +146,13 @@ img {
   -o-box-shadow: 0 0 5px #ebebeb;
   -ms-box-shadow: 0 0 5px #ebebeb;
 }
-
+figure{margin-bottom:2em;}
+figcaption{
+	margin-top:0;
+	padding-top:0;
+	margin-bottom:2em;
+	font-style: italic;
+}
 p img {
   display: inline;
   margin: 0;
