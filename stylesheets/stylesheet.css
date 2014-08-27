@@ -283,14 +283,30 @@ Full-Width Styles
   border-bottom-left-radius: 2px;
   border-bottom-right-radius: 2px;
 }
+/*Animation Prefs*/
+@-webkit-keyframes pulse {
+      0% {background-color: #39404F;}
+      75% {background-color: #f8e71c;}
+     100% {background-color: #111111;}
+}
+@keyframes pulse {
+      0% {background-color: #39404F;}
 
+     100% {background-color: #111111;}
+}
 #header_wrap {
-  background: #212121;
-  background: -moz-linear-gradient(top, #373737, #212121);
-  background: -webkit-linear-gradient(top, #373737, #212121);
-  background: -ms-linear-gradient(top, #373737, #212121);
-  background: -o-linear-gradient(top, #373737, #212121);
-  background: linear-gradient(top, #373737, #212121);
+  background: #39404F;
+/*
+  background: -moz-linear-gradient(top, #39404F, #393041);
+  background: -webkit-linear-gradient(top, #2c313c 0%, #39404f 100%);
+  background: -ms-linear-gradient(top, #39404F, #393041);
+  background: -o-linear-gradient(top, #39404F, #393041);
+  background: linear-gradient(top, #39404F, #393041 50%);
+*/
+  background: -webkit-linear-gradient(top, #39404F 0%, #39404f 100%);
+
+  -webkit-animation: pulse 10s infinite alternate;
+  animation: pulse 2s infinite alternate;
 }
 
 #header_wrap .inner {
