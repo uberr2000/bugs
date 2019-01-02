@@ -53,6 +53,7 @@ it will create :
 - the apache container (  [on port 80](http://localhost/) with email : myemail@email.com , password : admin )
 - phpmyadmin for monitoring (  [on port 8080](http://localhost:8080/) with login : bugs , password : password )
 
+the database is persisted while you dont move stop the container, or move/delete `../volumes/mariadb`
 
 
 ## Requirements:
