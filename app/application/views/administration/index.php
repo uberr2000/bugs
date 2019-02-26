@@ -46,3 +46,19 @@
 	</table>
 
 </div>
+<div class="pad2">
+	<?php
+		include "../app/application/libraries/checkVersion.php";
+		echo '<h4>'.__('tinyissue.version_check').' : ';
+		if ($verActu == $verNum) {
+			echo __('tinyissue.version_good').'!</h4>';
+		} else {
+			echo '<a href="install/update.php">'.__('tinyissue.version_need').'.</a></h4>';
+			echo __('tinyissue.version_your').' : '.$verActu.'<br />';
+			echo __('tinyissue.version_disp').' : '.$verNum.'<br />';
+			echo __('tinyissue.version_commit').' : '.$verCommit.'<br />';
+			echo '<a href="https://github.com/pixeline/bugs/releases" target="_blank">'.__('tinyissue.version_details').'</a> <br />';
+		}
+		echo '<br /><br />';
+	?>
+</div>
